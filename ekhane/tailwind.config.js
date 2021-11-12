@@ -4,7 +4,12 @@ module.exports = {
       extend: {
         fontFamily: {
          Lato: ["Lato", "sans-serif"],
-        },
+        }
+      },
+      extend: {
+        backgroundImage: {
+         'hero-section': "url('src/assets/main_image.jpg')",
+        }
       },
     },
     purge: {

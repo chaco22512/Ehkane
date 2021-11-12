@@ -1,5 +1,5 @@
-<nav class="bg-gray-900 text-white w-screen font-Lato">
-    <div class="max-w-5xl mx-auto px-8">
+<nav class="sticky top-0 z-50 bg-gray-900 text-white w-screen font-Lato shadow-lg">
+    <div class="container mx-auto px-8">
   
       <div class="flex justify-between items-center">
         <div class="py-3 px-3">
@@ -17,8 +17,8 @@
         </div>
   
         <div class="hidden md:flex items-center space-x-1">
-          <a class="py-5 px-3 text-gray-700">Login</a>
-          <a class="py-3 px-3 bg-yellow-500 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-600 rounded transition duration-300">Sign Up</a>
+          <a class="py-5 px-3 text-white">Login</a>
+          <a class="py-3 px-3 bg-green-500 hover:bg-green-300 text-green-900 hover:text-green-600 rounded-full transition duration-300">Sign Up</a>
         </div>
   
         <div class="md:hidden flex items-center"> <!--mobile thing goes here-->
@@ -43,6 +43,17 @@
           <a class="block px-2 py-3 text-sm hover:bg-gray-200">Hire</a>
           <a class="block px-2 py-3 text-sm hover:bg-gray-200">Help</a>
     </div>
+
+    <script>
+        const btn = document.querySelector(button.mobile-menu-button);
+        const menu = document.querySelector(div.mobile-menu);
+    
+        btn.addEventListener('click', () => {
+        menu.classList.toggle("hidden");
+    })
+    </script>
 </nav>
+
+
 
 
