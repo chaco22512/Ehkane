@@ -1,11 +1,14 @@
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
-  theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+    mode: 'jit',
+    theme: {
+      extend: {
+        fontFamily: {
+         Lato: ["Lato", "sans-serif"],
+        },
+      },
+    },
+    purge: {
+      enabled: true,
+      content: ['./src/**/*.{html,ts}']
+}
 }

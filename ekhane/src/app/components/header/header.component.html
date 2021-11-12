@@ -1,0 +1,48 @@
+<nav class="bg-gray-900 text-white w-screen font-Lato">
+    <div class="max-w-5xl mx-auto px-8">
+  
+      <div class="flex justify-between items-center">
+        <div class="py-3 px-3">
+          <a href="#"><img src="../assets/logo.png" class="h-20"></a>
+        </div>
+  
+        <div class="hidden md:flex items-center space-x-5">
+          <a class="py-3 px-3" [routerLink]="['/home']">Home</a>
+          <a class="py-3 px-3" [routerLink]="['/resources']">Resources</a>
+          <a class="py-3 px-3" [routerLink]="['/collectors']">Collectors</a>
+          <a class="py-3 px-3" [routerLink]="['/trashtalk']">Trash Talk</a>
+          <a class="py-3 px-3" [routerLink]="['/events']">Events</a>
+          <a class="py-3 px-3" [routerLink]="['/hire']">Hire</a>
+          <a class="py-3 px-3" [routerLink]="['/help']">Help</a>
+        </div>
+  
+        <div class="hidden md:flex items-center space-x-1">
+          <a class="py-5 px-3 text-gray-700">Login</a>
+          <a class="py-3 px-3 bg-yellow-500 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-600 rounded transition duration-300">Sign Up</a>
+        </div>
+  
+        <div class="md:hidden flex items-center"> <!--mobile thing goes here-->
+          <button class="mobile-menu-button">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+  
+      
+    </div>
+    <!-- Mobile Menu  -->
+  
+    <div class="mobile-menu hidden px-8">
+          <a class="block px-2 py-3 text-sm hover:bg-gray-200">Home</a>
+          <a class="block px-2 py-3 text-sm hover:bg-gray-200">Resources</a>
+          <a class="block px-2 py-3 text-sm hover:bg-gray-200">Collectors</a>
+          <a class="block px-2 py-3 text-sm hover:bg-gray-200">Trash Talk</a>
+          <a class="block px-2 py-3 text-sm hover:bg-gray-200">Events</a>
+          <a class="block px-2 py-3 text-sm hover:bg-gray-200">Hire</a>
+          <a class="block px-2 py-3 text-sm hover:bg-gray-200">Help</a>
+    </div>
+</nav>
+
+
