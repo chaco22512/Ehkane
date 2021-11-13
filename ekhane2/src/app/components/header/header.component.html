@@ -1,50 +1,65 @@
+<style>
+  .scroll-hidden::-webkit-scrollbar {
+      height: 0px;
+      background: transparent; /* make scrollbar transparent */
+  }
+</style>
+
 <nav class="sticky top-0 z-50 w-screen text-white bg-gray-900 shadow-lg font-Lato">
-  <div class="container px-8 mx-auto">
-
-    <div class="flex items-center justify-between">
-      <div class="px-3 py-3">
-        <a href="#"><img src="../assets/logo.png" class="h-20"></a>
+    <div class="container px-8 mx-auto">
+  
+      <div class="flex items-center justify-between">
+        <div class="px-3 py-3">
+          <a href="#"><img src="../assets/logo.png" class="h-20"></a>
+        </div>
+  
+        <div class="items-center hidden space-x-5 md:flex">
+          <a class="px-3 py-3" [routerLink]="['/home']">Home</a>
+          <a class="px-3 py-3" [routerLink]="['/resources']">Resources</a>
+          <a class="px-3 py-3" [routerLink]="['/collectors']">Collectors</a>
+          <a class="px-3 py-3" [routerLink]="['/trashtalk']">Trash Talk</a>
+          <a class="px-3 py-3" [routerLink]="['/events']">Events</a>
+          <a class="px-3 py-3" [routerLink]="['/hire']">Hire</a>
+          <a class="px-3 py-3" [routerLink]="['/help']">Help</a>
+        </div>
+  
+        <div class="items-center hidden space-x-1 md:flex">
+          <a class="px-3 py-5 text-white">Login</a>
+          <a class="px-3 py-3 text-green-200 transition duration-300 bg-green-500 rounded-full hover:bg-green-300 hover:text-green-600">Join Now!</a>
+        </div>
+  
+        <div class="flex items-center md:hidden"> <!--mobile thing goes here-->
+          <button class="mobile-menu-button" type="button" (click)="toggleNavbar()">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
       </div>
-
-      <div class="items-center hidden space-x-5 md:flex">
-        <a class="px-3 py-3" [routerLink]="['/home']">Home</a>
-        <a class="px-3 py-3" [routerLink]="['/resources']">Resources</a>
-        <a class="px-3 py-3" [routerLink]="['/collectors']">Collectors</a>
-        <a class="px-3 py-3" [routerLink]="['/trashtalk']">Trash Talk</a>
-        <a class="px-3 py-3" [routerLink]="['/events']">Events</a>
-        <a class="px-3 py-3" [routerLink]="['/hire']">Hire</a>
-        <a class="px-3 py-3" [routerLink]="['/help']">Help</a>
-      </div>
-
-      <div class="items-center hidden space-x-1 md:flex">
-        <a class="px-3 py-5 text-white">Login</a>
-        <a class="px-3 py-3 text-green-200 transition duration-300 bg-green-500 rounded-full hover:bg-green-300 hover:text-green-600">Join Now!</a>
-      </div>
-
-      <div class="flex items-center md:hidden"> <!--mobile thing goes here-->
-        <button class="mobile-menu-button">
-          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      </div>
+  
+      
     </div>
+    <!-- Mobile Menu  -->
+  
+    <div class="hidden px-8 mobile-menu" [ngClass]="{'hidden': !showMenu, 'block': showMenu}">
+      <div class="flex flex-wrap -mx-2 overflow-hidden">
 
-    
-  </div>
-  <!-- Mobile Menu  -->
-
-  <div class="hidden px-8 mobile-menu">
-        <a class="block px-2 py-3 text-sm hover:bg-gray-200">Home</a>
-        <a class="block px-2 py-3 text-sm hover:bg-gray-200">Resources</a>
-        <a class="block px-2 py-3 text-sm hover:bg-gray-200">Collectors</a>
-        <a class="block px-2 py-3 text-sm hover:bg-gray-200">Trash Talk</a>
-        <a class="block px-2 py-3 text-sm hover:bg-gray-200">Events</a>
-        <a class="block px-2 py-3 text-sm hover:bg-gray-200">Hire</a>
-        <a class="block px-2 py-3 text-sm hover:bg-gray-200">Help</a>
-  </div>
+        <div class="w-full px-2 my-2 overflow-hidden font-bold text-black bg-white rounded-3xl">
+          <a class="block px-2 py-3 text-sm hover:text-green-500" [routerLink]="['/home']">Home</a>
+          <a class="block px-2 py-3 text-sm hover:text-green-500" [routerLink]="['/resources']">Resources</a>
+          <a class="block px-2 py-3 text-sm hover:text-green-500" [routerLink]="['/collectors']">Collectors</a>
+          <a class="block px-2 py-3 text-sm hover:text-green-500" [routerLink]="['/trashtalk']">Trash Talk</a>
+          <a class="block px-2 py-3 text-sm hover:text-green-500" [routerLink]="['/events']">Events</a>
+          <a class="block px-2 py-3 text-sm hover:text-green-500" [routerLink]="['/hire']">Hire</a>
+          <a class="block px-2 py-3 text-sm hover:text-green-500" [routerLink]="['/help']">Help</a>
+        </div>
+      
+        <div class="w-full px-2 my-5 overflow-hidden">
+          <a class="px-3 py-5 text-white">Login</a>
+          <a class="px-3 py-3 text-green-200 transition duration-300 bg-green-500 rounded-full hover:bg-green-300 hover:text-green-600">Join Now!</a>
+        </div>
+      
+      </div>
+           
+    </div>
 </nav>
-
-
-
-
