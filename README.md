@@ -16,7 +16,7 @@ Business model in Canvas : https://docs.google.com/document/d/1UUkv8BgvCQRbpbWl8
 ; LP(100%), Login/Regislation(100%), Resource/CollectorTab(100%), Blog, Event, Users-Page(100%) <br>
 ; https://www.figma.com/file/k2rHKfkkN2cU9uZuVQMAie/Ekhane?node-id=0%3A1 <br>
 4. Front-end coding : 30% <br>
-; HTML, CSS, JS, (Angular, Visual studio) <br>
+; HTML, CSS, JS, (AngularJS, Visual studio) <br>
 5. Preparation of Database : 10% <br>
 ; MySql (Admin, Provider-user, Collector-user)... ID, Pass, Location, Age, Type(Provider, Collector=Bangadihala, Recruter)(Microsoft sql Server Management Studio) <br>
 6. Back-end coding : 10% <br>
