@@ -26,7 +26,7 @@ Business model in Canvas : https://docs.google.com/document/d/1UUkv8BgvCQRbpbWl8
 ; (ref) https://medium.com/@christof.thalmann/convert-angular-project-to-android-apk-in-10-steps-c49e2fddd29
 
 ## outcomes for submission
-Wireframe of UI : https://medium.com/@christof.thalmann/convert-angular-project-to-android-apk-in-10-steps-c49e2fddd29
+Wireframe of UI : https://medium.com/@christof.thalmann/convert-angular-project-to-android-apk-in-10-steps-c49e2fddd29 <br>
 URL on front-end : 
 
 ## Final Deadline
