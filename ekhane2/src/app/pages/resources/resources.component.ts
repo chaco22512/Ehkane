@@ -12,4 +12,17 @@ export class ResourcesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  initialCoordinates ={
+    lat : 23.7850,
+    lng: 90.4113,
+  };
+
+  mapConfigurations ={
+    disableDefaultUI: true,
+    fullscreenControl: true,
+    zoomControl: true,
+  }
+
 }
+
+
