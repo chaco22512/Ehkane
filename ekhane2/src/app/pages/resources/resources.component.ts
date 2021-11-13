@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-resources',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resources.component.css']
 })
 export class ResourcesComponent implements OnInit {
+
 
   constructor() { }
 
@@ -22,6 +23,7 @@ export class ResourcesComponent implements OnInit {
     fullscreenControl: true,
     zoomControl: true,
   }
+
 
 }
 

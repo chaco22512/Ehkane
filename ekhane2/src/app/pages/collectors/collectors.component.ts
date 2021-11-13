@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-collectors',
@@ -11,5 +11,18 @@ export class CollectorsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  
+  initialCoordinates ={
+    lat : 23.7850,
+    lng: 90.4113,
+  };
+
+  mapConfigurations ={
+    disableDefaultUI: true,
+    fullscreenControl: true,
+    zoomControl: true,
+  }
+
 
 }
