@@ -7,8 +7,13 @@ module.exports = {
         }
       },
       extend: {
+        colors: {
+          'cream': '#DFDEC5',
+        }
+      },
+      extend: {
         backgroundImage: {
-         'hero-section': "url('src/assets/main_image.jpg')",
+         'hero-image': "url('src/assets/main_image.jpg')",
         }
       },
     },
