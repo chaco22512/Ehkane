@@ -3,7 +3,7 @@ const { JsxEmit } = require('typescript');
 module.exports = {
   prefix:'',
   purge: {
-    enabled: process.env.NODE_ENV === 'production',
+    enabled: process.env.TAILWIND_MODE === 'build',
     content:[
       './src/**/*.{html,ts}',
     ]
