@@ -27,8 +27,8 @@ Business model in Canvas : https://docs.google.com/document/d/1UUkv8BgvCQRbpbWl8
 
 ## outcomes for submission
 Wireframe of UI : https://www.figma.com/proto/k2rHKfkkN2cU9uZuVQMAie/Ekhane?node-id=5%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=5%3A2 <br>
-front-end page : <file> Ekhane2 folder <br>
-                 <url>
+front-end page : file=> Ekhane2 folder <br>
+                 url=>  https://ekhane2-jvbheec1e-chaco22512.vercel.app/ <br>
 
 ## Final Deadline
 14 Nov 2021, 8:00 UTC
