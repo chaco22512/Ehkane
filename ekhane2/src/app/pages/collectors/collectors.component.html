@@ -8,8 +8,14 @@
 
 
   <!-- Google maps -->
-  <google-map width="100%" [center] ="initialCoordinates" [options]="mapConfigurations"></google-map>
-
+  <agm-map 
+[latitude]="latitude" 
+[longitude]="longitude" 
+[zoom]="zoom" >
+  <agm-marker 
+  [latitude]="latitude" 
+  [longitude]="longitude"></agm-marker>
+</agm-map>
 
 
 </body>

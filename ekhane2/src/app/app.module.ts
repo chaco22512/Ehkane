@@ -15,6 +15,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,11 @@ import { GoogleMapsModule } from '@angular/google-maps';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBgVKLRw0RmgvYJD-iM8soUk0UiblkiS_o',
+      libraries: ['places']
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
