@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { GoogleMap } from '@angular/google-maps';
 
 @Component({
   selector: 'app-resources',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResourcesComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+  }
 
   ngOnInit(): void {
+    // const searchBox = new google.maps.places.SearchBox(
+    //   this.searchField.nativeElement,
+    // );
+    // this.map.controls[google.maps.ControlPosition.TOP_CENTER].push(
+    //   this.searchField.nativeElement,
+    // );
   }
 
   initialCoordinates ={
