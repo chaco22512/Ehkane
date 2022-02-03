@@ -12,4 +12,16 @@ export class CollectorsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
+  initialCoordinates={
+    lat : 23.7850,
+    lng: 90.4113,
+  };
+
+  mapConfigurationn ={
+    disableDefaultUI: true,
+    fullscreenControl: true,
+    zoomControl: true,
+  };
+
 }

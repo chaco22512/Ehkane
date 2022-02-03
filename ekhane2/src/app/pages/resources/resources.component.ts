@@ -7,22 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResourcesComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-  initialCoordinates ={
+  initialCoordinates={
     lat : 23.7850,
     lng: 90.4113,
   };
 
-  mapConfigurations ={
+  mapConfigurationn ={
     disableDefaultUI: true,
     fullscreenControl: true,
     zoomControl: true,
+  };
+
+
+  constructor() { }
+
+  ngOnInit() {
+    
+    }
   }
 
-}
 
 

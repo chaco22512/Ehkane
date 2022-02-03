@@ -2,6 +2,60 @@
 
 <body>
 
+  <h1 class="text-4xl font-bold text-center mt-10 mb-5">Contact us for any questions!</h1>
+
+  <p class="text-1xl text-center mb-14">We answer your questions or concerns within 24 hours.</p>
+
+
+  <div class="container mx-auto bg-yellow-200 p-5 mb-5">
+    <!-- Send us message -->
+    <div class="w-full md:w-3/5 text-center">
+      <p class="text-2xl mb-5">Send us a message</p>
+      <div class="flex">
+        <input type="text" name="user"
+          class="block w-1/2 px-4 py-3 mb-4 border border-2 border-transparent border-gray-200 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none"
+          placeholder="Your name">
+        <input type="text" name="email"
+          class="block w-1/2 ml-3 px-4 py-3 mb-4 border border-2 border-transparent border-gray-200 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none"
+          placeholder="Your email">
+      </div>
+      <div class="flex">
+        <input type="text" name="telephone"
+          class="block w-1/2 px-4 py-3 mb-4 border border-2 border-transparent border-gray-200 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none"
+          placeholder="Your telephone">
+        <input type="text" name="organization"
+          class="block w-1/2 ml-3 px-4 py-3 mb-4 border border-2 border-transparent border-gray-200 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none"
+          placeholder="Your organization">
+      </div>
+
+      <textarea type="text" name="message"
+        class="form-control block w-full px-4 py-3 mb-4 border border-2 border-transparent border-gray-200 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none"
+        placeholder="Your message" rows=5></textarea>
+
+        <button
+          class="w-48 px-5 py-3 text-sm font-medium text-yellow-100 transition duration-300 bg-yellow-600 rounded-full shadow-sm hover:shadow-2xl hover:bg-yellow-700">Submit</button>
+    </div>
+
+    <!-- Our info -->
+    <div class="w-full mt-5 md:w-2/5 md:mt-0">
+      <p class="text-2xl mb-5 text-center"> Our infomation</p>
+
+      <fa-icon [icon]="faMapMarkerAlt" class="text-3xl ml-5 mr-3"></fa-icon>
+      <p>Mohakhali, Dhaka 1212, Bangladesh</p>
+
+      <fa-icon [icon]="faEnvelope" class="text-3xl ml-5 mr-3"></fa-icon>
+      <p>ekhaneownergy@gmail.com</p>
+
+      <fa-icon [icon]="faFacebook" class="text-3xl ml-5 mr-3"></fa-icon>
+      <fa-icon [icon]="faInstagram" class="text-3xl ml-5 mr-3"></fa-icon>
+      <fa-icon [icon]="faTwitter" class="text-3xl ml-5 mr-3"></fa-icon>
+
+
+    </div>
+
+
+  </div>
+
 
 </body>
 
