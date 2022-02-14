@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ekhane-e6f16": {
+      "hosting": {
+        "ekhane2": [
+          "ekhane-e6f16"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ekhane-e6f16"
+  }
+}

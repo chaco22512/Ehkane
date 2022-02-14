@@ -14,6 +14,19 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { VarificationComponent } from './pages/varification/varification.component';
+import { LoginComponent } from './pages/login/login.component';
+import { ForgetComponent } from './pages/forget/forget.component';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import { AngularFireModule } from '@angular/fire/compat';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -26,15 +39,25 @@ import { GoogleMapsModule } from '@angular/google-maps';
     HireComponent,
     HelpComponent,
     HeaderComponent,
-    FooterComponent
-  ],
+    FooterComponent,
+    DashboardComponent,
+    VarificationComponent,
+    LoginComponent,
+    ForgetComponent  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     GoogleMapsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
+    FormsModule,
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

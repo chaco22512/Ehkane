@@ -99,6 +99,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "ekhane2:build:production",
+            "firebaseProject": "ekhane-e6f16",
+            "firebaseHostingSite": "ekhane-e6f16"
+          }
         }
       }
     }
