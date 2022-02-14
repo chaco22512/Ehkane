@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { faFacebook, faTwitter, faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
 import { AuthService } from 'src/app/services/auth.service';
+import { ViewportScroller } from '@angular/common';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -21,9 +22,14 @@ export class HomeComponent implements OnInit {
   constructor(
     private fB : FormBuilder,
     private auth:AuthService,
+    private ViewportScroller:ViewportScroller,
   ) { }
 
   ngOnInit(): void {
+  }
+
+  onClick(elementId:string){
+    this.ViewportScroller.scrollToAnchor(elementId);
   }
 
   signupForm = new FormGroup({

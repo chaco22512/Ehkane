@@ -1,5 +1,7 @@
 import { AuthService } from './../../services/auth.service';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +13,9 @@ export class LoginComponent implements OnInit {
   email:string ='';
   password:string ='';
 
-  constructor(private auth:AuthService) { }
+  constructor(private auth:AuthService,
+    private router:Router,
+    private ViewportScroller:ViewportScroller) { }
 
   ngOnInit(): void {
   }
@@ -34,6 +38,17 @@ export class LoginComponent implements OnInit {
   // sign in wtih google
   signInWithGoogle(){
     this.auth.googleSignIn()
+  }
+
+  // to signUp
+
+  signupId:string ='sign-up'
+  toSignUp(){
+    this.router.navigate(['/home'])
+    .then(()=>{
+      this.ViewportScroller.scrollToAnchor(this.signupId);
+    })
+
   }
 
 }
